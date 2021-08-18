@@ -39,7 +39,7 @@
                     <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                    <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar tickets</a>
                   </li>                  
                 </ul>                
               </div>
@@ -69,7 +69,7 @@
                 <h1>Platzi Conf Hawaii</h1>
                 <p class="d-none d-md-block">Platzi Conf llega por primera vez a Hawaii un evento para compartir con nuestra comunidad.</p>
                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar tickets</button>
               </div>
             </div>
           </div>
@@ -229,6 +229,38 @@
         </div>
     </footer>
     <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar tickets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <fom>
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </fom>
+            <div class="alert alert-warning" role="alert">
+              Recibirás un correo de confirmación si sales sorteado.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
